@@ -28,6 +28,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.headerfiltros{
+  background-color: var(--primario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 
 .headermain img {
   height: 2rem;
