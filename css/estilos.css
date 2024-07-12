@@ -19,7 +19,7 @@
 
 .headermain {
   padding: 0.2rem;
-  height: 2rem;
+  height: 4rem;
 }
 
 header {
@@ -407,4 +407,20 @@ select {
   border-radius: 1rem;
 }
 
+.text-right {
+  position: absolute;
+  top: 70;
+  right: 50;
+}
+
+.producto{
+  margin-top: 5%;
+}
+.descripcion{
+  font-size: 200%;
+  display: inline-block;
+}
+.gotocheckout{
+  background-color: red;
+}
 /*# sourceMappingURL=estilos.css.map */
