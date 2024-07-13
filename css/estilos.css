@@ -408,6 +408,7 @@ select {
 }
 
 .text-right {
+  margin-top: 5%;
   position: absolute;
   top: 70;
   right: 50;
