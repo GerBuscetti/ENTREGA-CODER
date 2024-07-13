@@ -1,20 +1,20 @@
 @charset "UTF-8";
-:root {
-  --blanco: #F2F2F2;
-  --primario: #ffa500;
-  --secundario: #2979C4;
-  --negro: #242800;
-  --error: #ef3c2d;
-  --grisclaro: #D1D1D1;
-  --gris: #B8B8B8;
-  --primariooscuro: #c88200;
-  --secundariooscuro: #336596;
-  --azul: #4091c9;
-  --rojo: #ef3c2d;
-  --verde: #a5eea0;
-  --success: #a5eea0;
+body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
+  --blanco: #F2F2F2;
+  --primario: #FFA500;
+  --secundario: #2979C4;
+  --negro: #242800;
+  --error: #EF3C2D;
+  --grisclaro: #D1D1D1;
+  --gris: #B8B8B8;
+  --primariooscuro: #C88200;
+  --secundariooscuro: #336596;
+  --azul: #4091C9;
+  --rojo: #EF3C2D;
+  --verde: #A5EEA0;
+  --success: #A5EEA0;
 }
 
 .headermain {
@@ -28,18 +28,30 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.headerfiltros{
+
+.headerfiltros {
   background-color: var(--primario);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 1rem;
+  color: var(--blanco);
+  padding: 0.5rem;
+}
+.headerfiltros a:hover {
+  color: #000000;
+  border: 2px solid rgb(248, 170, 36);
+  padding: 2px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: ease-out 0.4s;
 }
 
 .headermain img {
   height: 2rem;
 }
-
 .headermain img:hover {
   background: #f09b08;
   box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -58,21 +70,40 @@ header {
   color: var(--blanco);
 }
 
-.headerfiltros a:hover {
-  color: #000000;
-  border: 2px solid rgb(248, 170, 36);
-  padding: 2px;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: ease-out 0.4s;
+body {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+body.login-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primario);
+}
+body.login-registration .error {
+  color: var(--error);
+}
+body.login-registration .success, body.login-registration .success-box {
+  color: var(--success);
+  border-color: var(--success);
 }
 
-.headerfiltros {
-  height: 1rem;
-  color: var(--blanco);
-  padding: 0.5rem;
+.errorMessage {
+  font-size: 1rem;
+  color: var(--error);
+}
+
+.error-message {
+  font-size: 1rem;
+  color: var(--error);
+}
+
+.form.error input {
+  border-color: #ff3860;
+}
+
+.success-box {
+  border-style: solid;
 }
 
 #product {
@@ -114,7 +145,6 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .viewproduct:hover {
   background: #fd9393;
 }
@@ -131,7 +161,6 @@ header {
   width: 60%;
   float: left;
 }
-
 .fotoproducto img {
   width: 100%;
 }
@@ -143,10 +172,27 @@ header {
   padding-left: 20px;
 }
 
-.button,
-.buttonalt,
-.buttonmini,
-.buttonminialt {
+.text-right {
+  margin-top: 5%;
+  position: absolute;
+  top: 70;
+  right: 50;
+}
+
+.producto {
+  margin-top: 5%;
+}
+
+.descripcion {
+  font-size: 200%;
+  display: inline-block;
+}
+
+.gotocheckout {
+  background-color: red;
+}
+
+.button, .buttonalt, .buttonmini, .buttonminialt {
   padding: 1rem;
   margin: 0.5rem;
   width: 100%;
@@ -161,7 +207,6 @@ header {
   background-color: var(--primario);
   color: var(--blanco);
 }
-
 .button:hover {
   cursor: pointer;
   background-color: var(--secundario);
@@ -173,25 +218,19 @@ header {
   color: var(--negro);
 }
 
-.buttonmini {
+.buttonmini, .buttonminialt {
   width: 40%;
+}
+.buttonmini.buttonmini, .buttonminialt.buttonmini {
   background-color: var(--primario);
   color: var(--blanco);
 }
-
-.buttonminialt {
-  width: 40%;
+.buttonmini.buttonminialt, .buttonminialt.buttonminialt {
   background-color: white;
   color: var(--negro);
 }
 
 @media screen and (max-width: 600px) {
- .trashcan{
-  display: none;
- }
-  #quantity{
-  display: none;
- }
   #logohome {
     display: none;
   }
@@ -199,7 +238,7 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
   .product-item {
-    width: 50%;
+    width: 100%;
   }
   .proproduct {
     display: flex;
@@ -213,12 +252,6 @@ header {
   }
 }
 @media screen and (max-width: 1250px) {
-  .trashcan{
-    display: none;
-   }
-    #quantity{
-    display: none;
-   }
   #logohome {
     display: none;
   }
@@ -272,92 +305,6 @@ header {
   text-align: center;
 }
 
-#shopcart_product {
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  gap: 7%;
-}
-
-#shopcart_product .photoproduct {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-#shopcart_product .product_details {
-  flex-grow: 1;
-}
-
-#shopcart_product .product_details h3 {
-  margin: 0;
-}
-
-#shopcart_product .product_details p {
-  margin: 5px 0;
-}
-
-#shopcart_product .product_price {
-  text-align: right;
-}
-
-#shopcart_summary {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.trashcan {
-  width: 20px;
-  height: 20px;
-}
-
-.trashcan:hover {
-  cursor: pointer;
-}
-
-body {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight);
-}
-
-a {
-  cursor: pointer;
-}
-
-body.login-registration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primario);
-}
-
-.error {
-  color: var(--error);
-}
-
-.error-message {
-  font-size: 1rem;
-  color: var(--error);
-}
-
-.form.error input {
-  border-color: #ff3860;
-}
-
-.success {
-  color: var(--success);
-  border-color: var(--success);
-}
-
-.success-box {
-  border-color: var(--success);
-  border-style: solid;
-}
-
 /* Registration Form Styles */
 #names,
 #surname,
@@ -407,21 +354,4 @@ select {
   border-radius: 1rem;
 }
 
-.text-right {
-  margin-top: 5%;
-  position: absolute;
-  top: 70;
-  right: 50;
-}
-
-.producto{
-  margin-top: 5%;
-}
-.descripcion{
-  font-size: 200%;
-  display: inline-block;
-}
-.gotocheckout{
-  background-color: red;
-}
 /*# sourceMappingURL=estilos.css.map */
