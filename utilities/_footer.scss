@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+// Estilos del footer
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px 0;
+
+            h2 {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            p,
+            form {
+                margin: 0;
+                padding: 0;
+            }
+
+            .contact-form {
+                input[type="email"] {
+                    padding: 10px;
+                    margin-right: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                button {
+                    padding: 10px 20px;
+                    background-color: #ff6600;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #ff4500;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #444;
+        margin-top: 20px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}

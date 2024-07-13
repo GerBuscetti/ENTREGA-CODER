@@ -187,7 +187,6 @@ body.login-registration .success, body.login-registration .success-box {
 .descripcion {
   font-size: 200%;
   display: inline-block;
-  
 }
 
 .gotocheckout {
@@ -354,6 +353,80 @@ select {
   background-color: var(--blanco);
   padding: 2rem;
   border-radius: 1rem;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+footer .footer-container .footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+footer .footer-container .footer-section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+footer .footer-container .footer-section p,
+footer .footer-container .footer-section form {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-container .footer-section .contact-form input[type=email] {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+footer .footer-container .footer-section .contact-form button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .footer-container .footer-section .contact-form button:hover {
+  background-color: #ff4500;
+}
+footer .footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+footer .footer-bottom p {
+  margin: 0;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
