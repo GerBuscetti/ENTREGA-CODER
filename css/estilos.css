@@ -232,6 +232,13 @@ body.login-registration .success, body.login-registration .success-box {
 }
 
 @media screen and (max-width: 600px) {
+  .descripcion{
+    size: 5%;
+  }
+
+  .text-right{
+    margin-top: 50%;
+  }
   #logohome {
     display: none;
   }
@@ -253,6 +260,12 @@ body.login-registration .success, body.login-registration .success-box {
   }
 }
 @media screen and (max-width: 1250px) {
+  .descripcion{
+    size: 5%;
+  }
+  .text-right{
+    margin-top: 50%;
+  }
   #logohome {
     display: none;
   }
@@ -267,6 +280,13 @@ body.login-registration .success, body.login-registration .success-box {
   }
 }
 @media screen and (max-width: 1450px) {
+  .descripcion{
+    size: 5%;
+  }
+  .text-right{
+    margin-top: 50%;
+    size: 50%;
+  }
   #logohome {
     display: none;
   }
