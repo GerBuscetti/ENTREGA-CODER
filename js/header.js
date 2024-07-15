@@ -2,7 +2,7 @@ const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
-const producthome = document.getElementsByClassName("photoproduct");
+const producthome = document.getElementsByClassName("card-img-top");
 
 const imagen = document.getElementById('imagenhome');
 const boton = document.getElementById('buynowbutton');
@@ -25,7 +25,7 @@ const remeras = [
 ]
 const zapatillas = [
   "img/imgropa/zapatillas/zapatilla1.png",
-  "img/imgropa/zapatillas/zapatilla2.png",
+  "img/imgropa/zapatillas/zapatilla11.png",
   "img/imgropa/zapatillas/zapatilla3.png",
   "img/imgropa/zapatillas/zapatilla4.png",
   "img/imgropa/zapatillas/zapatilla5.png",
@@ -77,7 +77,7 @@ function mostrar_remeras() {
   // Recorre todos los elementos y cambia la imagen
   for (var i = 0; i < producthome.length; i++) {
 
-    var productdata = producthome[i].parentNode.querySelector('p');
+    var productdata = producthome[i].nextElementSibling.querySelector('.card-title');
     
     producthome[i].src = remeras[i]; // Reemplaza "img/nueva-imagen.jpg" con la ruta de la nueva imagen que deseas usar
     productdata.textContent = "Remera";
@@ -87,7 +87,7 @@ function mostrar_pantalones() {
 
     for (var i = 0; i < producthome.length; i++) {
 
-        var productdata = producthome[i].parentNode.querySelector('p');
+      var productdata = producthome[i].nextElementSibling.querySelector('.card-title');
     
         producthome[i].src = pantalones[i]; 
         productdata.textContent = "Pantalon";
@@ -97,7 +97,7 @@ function mostrar_zapatillas() {
   
     for (var i = 0; i < producthome.length; i++) {
 
-        var productdata = producthome[i].parentNode.querySelector('p');
+      var productdata = producthome[i].nextElementSibling.querySelector('.card-title');
     
         producthome[i].src = zapatillas[i]; 
         productdata.textContent = "Zapatilla";
@@ -115,6 +115,6 @@ function mostrar_ropa() {
 }
 
 function ver_producto() {
-  window.location.href = "product_page.html";
+  window.location.href = "templates/product_page.html";
 
 }

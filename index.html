@@ -10,7 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>s
     <script type="text/javascript" src="js/header.js"></script>
     
 </head>
@@ -19,7 +21,7 @@
     <div id="backgroundhome">
         <header class="headermain">
             <a class="logo" href="index.html">Bumovar</a>
-            <a class="carrito" href="shopcart.html"><img src="img/carritofinal.png" alt="carrito de compras"></a>
+            <a class="carrito" href="templates/shopcart.html"><img src="img/carritofinal.png" alt="carrito de compras"></a>
         </header>
         <nav class="headerfiltros">
             <a onclick="mostrar_remeras()">Remeras</a>
@@ -28,112 +30,188 @@
             <a onclick = "ir_home()">Otros</a>
         </nav>
         
-        
+<div class = "principal">   
+    <h1 id ="h4home">Tienda online de compra de ropa</h1>
     <img id="logohome"  src= "img/imagenhome.png" alt="Logo Bumovar"> 
-        <h1 id ="h4home">Tienda online de compra de ropa</h1>    
-        <div id="product">
-
-            
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/remeras/remera1.png alt="imagen de producto">
-                <p class = "product_name">Remera</p><h5 class = "price">Precio: $12.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct" >Ver Producto</button>
-                </a>
-
-                </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/remeras/remera2.png alt="imagen de producto">
-                <p class = "product_name">Remera </p><h5 class = "price">Precio: $20.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-
-
-            </div>
-
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/zapatillas/zapatilla1.png alt="imagen de producto">
-                <p class = "product_name">Zapatillas </p><h5 class = "price">Precio: $14.000</h5>
-                <a href= "templates/product_page.html"> 
-                <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/pantalones/pantalon1.png alt="imagen de producto">
-                <p class = "product_name">Pantalon </p><h5 class = "price">Precio: $22.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/zapatillas/zapatilla3.png alt="imagen de producto">
-                <p class = "product_name">Zapatillas </p><h5 class = "price">Precio: $16.000</h5>
-                <a href= "templates/product_page.html"> 
-                <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/remeras/remera3.png alt="imagen de producto">
-                <p class = "product_name">Remera </p><h5 class = "price">Precio: $13.000</h5>
-                <a href= "templates/product_page.html"> 
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/pantalones/pantalon2.png alt="imagen de producto">
-                <p class = "product_name">Pantalon </p><h5 class = "price">Precio: $17.000</h5>
-                <a href= "templates/product_page.html"> 
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/pantalones/pantalon3.png alt="imagen de producto">
-                <p class = "product_name">Pantalon </p><h5 class = "price">Precio: $16.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/zapatillas/zapatilla3.png alt="imagen de producto">
-                <p class = "product_name">Zapatillas </p><h5 class = "price">Precio: $23.000</h5>
-                <a href= "templates/product_page.html"> 
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/pantalones/pantalon4.png alt="imagen de producto">
-                <p class = "product_name">Pantalon </p><h5 class = "price">Precio: $15.500</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">    
-                <img class="photoproduct" src= img/imgropa/remeras/remera4.png alt="imagen de producto">
-                <p class = "product_name">Remera </p><h5 class = "price">Precio: $18.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
-
-            <div class="product-item">
-                <img class="photoproduct" src= img/imgropa/zapatillas/zapatilla4.png alt="imagen de producto">
-                <p class = "product_name">Zapatillas </p><h5 class = "price">Precio: $20.000</h5>
-                <a href= "templates/product_page.html">
-                <button class="viewproduct"onclick="ver_producto()">Ver Producto</button>
-                </a>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/productpage/foto1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Zapatillas Nike</h5>
+              <p>Ultimo modelo en oferta. $35.000</p>
+              <button class="viewproduct" onclick="ver_producto()">Ver Producto</button> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/productpage/foto2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Zapatillas Nike</h5>
+                <p>Ultimo modelo en oferta. $35.000</p>
+              <button class="viewproduct" onclick="ver_producto()">Ver Producto</button> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/productpage/foto3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Zapatillas Nike</h5>
+              <p>Ultimo modelo en oferta. $35.000</p>
+              <button class="viewproduct" onclick="ver_producto()">Ver Producto</button> 
+            </div>
+          </div>  
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
+       
+<div class="row row-cols-1 row-cols-md-3 g-4">  
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/remeras/remera1.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Remera</h5>  
+                        <h5 class="price">Precio: $20.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>  
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div>  
+        
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/remeras/remera2.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Remera</h5>  
+                        <h5 class="price">Precio: $25.000</h5>  
+                        <p class="card-text">cantidad disponibles : 3</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div>  
+        
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/pantalones/pantalon1.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Pantalon</h5>  
+                        <h5 class="price">Precio: $30.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/pantalones/pantalon2.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Pantalon</h5>  
+                        <h5 class="price">Precio: $35.000</h5>  
+                        <p class="card-text">cantidad disponibles : 2</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/zapatillas/zapatilla1.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Zapatillas</h5>  
+                        <h5 class="price">Precio: $40.000</h5>  
+                        <p class="card-text">cantidad disponibles : 4</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/pantalones/pantalon3.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Pantalon</h5>  
+                        <h5 class="price">Precio: $27.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/remeras/remera3.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Remera</h5>  
+                        <h5 class="price">Precio: $28.000</h5>  
+                        <p class="card-text">cantidad disponibles : 2</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/zapatillas/zapatilla4.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Zapatilla</h5>  
+                        <h5 class="price">Precio: $45.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/zapatillas/zapatilla10.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Zapatilla</h5>  
+                        <h5 class="price">Precio: $50.000</h5>  
+                        <p class="card-text">cantidad disponibles : 5</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/pantalones/pantalon7.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Pantalon</h5>  
+                        <h5 class="price">Precio: $31.000</h5>  
+                        <p class="card-text">cantidad disponibles : 2</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/remeras/remera8.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Remera</h5>  
+                        <h5 class="price">Precio: $23.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div> 
+            <div class="col">  
+                <div class="card">  
+                    <img src="img/imgropa/pantalones/pantalon7.png" class="card-img-top" alt="...">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Pantalon</h5>  
+                        <h5 class="price">Precio: $38.000</h5>  
+                        <p class="card-text">cantidad disponibles : 1</p>
+                        <button class="viewproduct" onclick="ver_producto()">Ver Producto</button>  
+                    </div>  
+                </div>  
+            </div>                                                                                                             
+
+        </div>                       
     <footer>
         <div class="footer-container">
             <div class="footer-section about">

@@ -13,9 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../css/estilos.css" media="all"/>
     
      <!-- js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/header.js" defer></script>
     <script src="../js/slideshow.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     
 
 </head>
@@ -23,87 +24,114 @@
     <header class="headermain">
     
         <a class="logo" href="../index.html">Bumovar</a>
-        <a class="carrito" href="shopcart.html"><img src="../img/carritofinal.png"></a>
+        <a class="carrito" href="shopcart.html"><img src="../img/carritofinal.png" alt="carro de compras"></a>
     </header>
     
-<div  class = "producto">  
+    <div class="container-title">Zapatillas Nike</div>
 
-<section class="slider container-fluid">
-    <div class="row">
-        <div class="col-lg-6"> <!-- Colocamos el carrusel en la mitad de la página -->
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                 
+    <main>
+        <div class="container-img">
+            <section class="slider container-fluid">
+                <div class="row">
+                    <div class = "col-sm-12 col-md-24 col-lg-12"> 
+                        <div id="carouselExampleIndicators" class="carousels slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                             
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/productpage/foto1.jpg" class="d-block w-100" alt="imagen 1 del producto">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img src="../img/productpage/foto3.jpg" class="d-block w-100" alt="imagen 3 del producto">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span >Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span >Next</span>
+                            </button>  
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/productpage/foto1.jpg" class="d-block w-100" alt="imagen 1 del producto">
-                  </div>
-                  
-                  <div class="carousel-item">
-                    <img src="../img/productpage/foto3.jpg" class="d-block w-100" alt="imagen 3 del producto">
-                  </div>
+            </section>        
+        </div>
+        <div class = "row">
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>$65.000</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected value="">
+                            Escoge una opción
+                        </option>
+                        <option value="rojo">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="beige">Beige</option>
+                    </select>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span >Previous</span>
+                <div class="form-group">
+                    <label for="size">Talle</label>
+                    <select name="size" id="size">
+                        <option disabled selected value="">
+                            Escoge una opción
+                        </option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input
+                        type="number"
+                        placeholder="1"
+                        value="1"
+                        min="1"
+                        class="input-quantity"
+                    />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span >Next</span>
-                </button>  
+            </div>
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>
+                        Zapatillas Nike ultimo modelo 2024, super comodas, livianas y duraderas, 
+                        hechas con la mejor calidad.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6"> 
-            <div class="text-right">
-    
-                <h1>Zapatillas Nike</h1>
-                <h2>$65000</h2>
-                <label for="size">Tamaño: </label>
-                <select id="size" name="size">
-                    <option value="" selected="selected"> - selecciona - </option>
-                    <option value="XS">XS - 38</option>
-                    <option value="S">S - 39</option>
-                    <option value="M">M - 40</option>
-                    <option value="L">L - 41</option>
-                    <option value="XL">XL - 42</option>
-                    <option value="XXL">XXL - 43</option>
-                </select>
-                
-                
-                <label for="quantity">Cantidad: </label>
-                <select id="quantity" name="quantity">
-                    <option value="" selected="selected"> - selecciona - </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-                
-                
-                <button class="button">Añadir al carrito</button>
-                <a href= "checkout.html">
-                <button class="buttonalt">Comprar ahora</button>
-                </a>
-                
-            </div>
-            </div>
         </div>
-       
-    </div>
-</section>
-<div class="descripcion">
-    <p>Zapatillas nike de tela de alta calidad, muy comodas y duraderas, aprovecha las nuevas nike a este precio imperdible</p>
-</div>
-</div>
+    </main>            
 <footer>
     <div class="footer-container">
         <div class="footer-section about">

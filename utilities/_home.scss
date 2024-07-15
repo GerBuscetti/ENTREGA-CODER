@@ -12,21 +12,21 @@
   height: auto;
 }
 
-#logohome {
+#logohome { 
+  margin-left: 50%;   
   width: 400px;
-  font-size: 50px;
   text-transform: uppercase;
   padding: 20px;
   border-radius: 50px;
   margin-bottom: 10px;
-  align-self: center;
-  position: sticky;
-  left: 50%;
-  bottom: 100px;
+
   transform: translateX(-50%);
   opacity: 0.9;
 }
-
 #h4home {
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 162, 0);
+  margin-top: 1%;
 }
