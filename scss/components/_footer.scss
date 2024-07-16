@@ -76,10 +76,18 @@ footer {
         padding: 10px 0;
         border-top: 1px solid #444;
         margin-top: 20px;
+        background-color: orange;
 
         p {
             margin: 0;
             font-size: 14px;
         }
     }
+}
+.subscribe {
+    width: 40%;
+}
+
+.subscribe-button{
+    background-color: orange;
 }

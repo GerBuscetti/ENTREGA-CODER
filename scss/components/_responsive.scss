@@ -4,11 +4,20 @@
     bottom: 10px; /* Posición desde abajo */
     right: 10px;
   }
+  .ver-producto{
+    width: 35%;
+    padding: 2px;
+    float: right;
+  }
   #product {
     grid-template-columns: repeat(1, 1fr);
   }
   #logohome {
     display: none;
+  }
+  #imgcarrito{
+    float: left;
+    margin-right: 150%;
   }
   
 }
@@ -18,11 +27,20 @@
     bottom: 10px; /* Posición desde abajo */
     right: 10px;
   }
+  .ver-producto{
+    width: 35%;
+    padding: 2px;
+    float: right;
+  }
   #product {
     grid-template-columns: repeat(1, 1fr);
   }
   #logohome {
     display: none;
+  }
+  #imgcarrito{
+    float: left;
+    margin-right: 150%;
   }
  
 }
@@ -32,6 +50,11 @@
     bottom: 10px;  
     right: 10px;  
   }  
+  .ver-producto{
+    width: 35%;
+    padding: 2px;
+    float: right;
+  }
   #product {  
     grid-template-columns: repeat(1, 1fr);  
   }  
@@ -49,6 +72,10 @@
 
   .container-info-product {  
     order: 1;  
-  }   
+  } 
+  #imgcarrito{
+    float: left;
+    margin-right: 150%;
+  }  
   
 } 
