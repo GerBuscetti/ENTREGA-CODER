@@ -37,12 +37,24 @@
   }
 }
 
-.container-title {  
+.container-title { 
+  font-size: 60%; 
   padding: 30px;  
   background-color: #eee;  
   margin-bottom: 50px;  
   color: #222;  
 }  
+.carousel-caption h5{
+  border-radius: 20%;
+  background-color: orange;
+  color: white;
+}
+.carousel-caption p{
+  border-radius: 20%;
+  background-color: orange;
+  color: white;
+}
+
 
 main {  
   display: flex;  

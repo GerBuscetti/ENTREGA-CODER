@@ -68,18 +68,23 @@ menuOpen.addEventListener("click", () => {
 menuClose.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
+function ir_home() {
+  window.location.href = "../index.html";
+}
+function reiniciar() {
+  window.location.href = "index.html";
+}
 
 
 function mostrar_remeras() {
-
-
+  
 
   // Recorre todos los elementos y cambia la imagen
   for (var i = 0; i < producthome.length; i++) {
 
     var productdata = producthome[i].nextElementSibling.querySelector('.card-title');
     
-    producthome[i].src = remeras[i]; // Reemplaza "img/nueva-imagen.jpg" con la ruta de la nueva imagen que deseas usar
+    producthome[i].src = remeras[i]; 
     productdata.textContent = "Remera";
   }
 }
@@ -103,9 +108,7 @@ function mostrar_zapatillas() {
         productdata.textContent = "Zapatilla";
       }
 }
-function ir_home() {
-  window.location.href = "index.html";
-}
+
 
 function mostrar_ropa() {
 
